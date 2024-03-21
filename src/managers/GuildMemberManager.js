@@ -217,6 +217,10 @@ class GuildMemberManager extends CachedManager {
     return this._fetchMany(options);
   }
 
+  forceFetchMany(){
+    this._fetchMany();
+  }
+
   /**
    * Fetches the client user as a GuildMember of the guild.
    * @param {BaseFetchOptions} [options] The options for fetching the member
