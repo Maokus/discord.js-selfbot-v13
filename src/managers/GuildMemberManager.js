@@ -218,7 +218,8 @@ class GuildMemberManager extends CachedManager {
   }
 
   forceFetchMany(){
-    this._fetchMany();
+    console.log("Activated force fetch many");
+    return this._fetchMany();
   }
 
   /**
